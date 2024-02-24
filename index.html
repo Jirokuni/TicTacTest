@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="button-holders">
+      <div id="header">
+        <h1>
+          <span id="word-one">Tic</span>
+          <span id="word-two">-</span>
+          <span id="word-three">Tac</span>
+          <span id="word-four">-</span>
+          <span id="word-five">Toe</span>
+        </h1>
+      <h2 id="play-text">Play as:</h2>
+    </div>
+    <div class="btns">
+      <button id="o-start">O</button>
+      <button id="x-start">X</button>
+    </div>
+    </div>
+    <div id="instruction-page">
+      <h1>How to Play</h1>
+      <ul>
+        <li>
+          1. Each player takes a turn placing an "X" or a "O" in the board.
+        </li>
+        <li>2. First to make three-in-a-row wins!</li>
+        <li>3. No winning combinations made results in a "Tie".</li>
+        <h3>Winning Combos:</h3>
+        <div id="image-container">
+          <div class="image-with-caption">
+            <img
+              src="https://cdn.vectorstock.com/i/preview-1x/87/38/tic-tac-toe-xo-game-hand-drawn-grid-doodle-vector-49308738.jpg"
+            />
+            <figcaption>Vertical</figcaption>
+          </div>
+          <div class="image-with-caption">
+            <img
+              src="https://cdn.vectorstock.com/i/preview-1x/22/67/tic-tac-toe-xo-game-hand-drawn-grid-doodle-vector-49342267.jpg"
+            />
+            <figcaption>Horizontal</figcaption>
+          </div>
+          <div class="image-with-caption">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6KSzvBRGJFJ7wuJuwinP63ms-Rc26-sjgMw&usqp=CAU"
+            />
+            <figcaption>Diagonal</figcaption>
+          </div>
+        </div>
+      </ul>
+      <button id="ins-btn">Proceed</button>
+    </div>
+    <div id="gameContainer">
+      <h1>Tic Tac Toe</h1>
+      <div id="cellContainer">
+        <div cellIndex="0" class="cell"></div>
+        <div cellIndex="1" class="cell"></div>
+        <div cellIndex="2" class="cell"></div>
+        <div cellIndex="3" class="cell"></div>
+        <div cellIndex="4" class="cell"></div>
+        <div cellIndex="5" class="cell"></div>
+        <div cellIndex="6" class="cell"></div>
+        <div cellIndex="7" class="cell"></div>
+        <div cellIndex="8" class="cell"></div>
+      </div>
+      <h2 id="statusText"></h2>
+      <div class="board-buttons">
+        <button id="restartBtn">Restart</button>
+        <button id="prevMoveBtn" class="his-btn">Previous Move</button>
+        <button id="nextMoveBtn" class="hist-btn">Next Move</button>
+      </div>
+    </div>
+  </body>
+</html>

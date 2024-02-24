@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #0000009c, #014130);
+  font-family: "Poppins", sans-serif;
+}
+
+.button-holders {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  gap: 1rem;
+  color: white;
+  flex-direction: column;
+  z-index: 2;
+}
+
+#header {
+  text-align: center;
+  font-size: 3rem;
+}
+
+#o-start {
+  width: 2rem;
+  padding: 0.3rem;
+  color: red;
+  font-size: 1.5rem;
+}
+
+#x-start {
+  width: 2rem;
+  padding: 0.3rem;
+  color: blue;
+  font-size: 1.5rem;
+}
+
+#instruction-page {
+  text-align: justify;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 3.5rem;
+  font-size: 2rem;
+  z-index: 1;
+}
+
+#instruction-page li {
+  display: flex;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#instruction-page h3 {
+  padding-top: 1rem;
+  text-indent: 2.15rem;
+}
+
+#instruction-page .image-with-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#instruction-page #image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 1.5rem;
+}
+
+#instruction-page img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 1rem;
+}
+
+#instruction-page #ins-btn {
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+#gameContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#gameContainer h1 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+#gameContainer h2 {
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+#cellContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 14rem;
+  color: white;
+}
+
+.cell {
+  width: 4.7rem;
+  height: 4.7rem;
+  border: 0.01rem solid;
+  line-height: 4.7rem;
+  font-size: 3.125rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.3rem 0.1rem;
+}
+
+.cell:hover {
+  box-shadow: 0 0 1rem 0;
+}
+
+.board-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+#restartBtn {
+  font-size: 0.8rem;
+  padding: 0.3rem;
+  border-radius: 20%;
+}
+
+.his-btn,
+.hist-btn {
+  display: none;
+}
+
+@keyframes fade-up {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.3s ease-in-out;
+}
+
+
+@keyframes go-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(25%);
+  }
+  75% {
+    transform: translateY(-25%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#word-one {
+  animation: go-down 2s ease-in;
+  display: inline-block;
+}
+
+#word-two {
+  animation: go-down 2.3s ease-in;
+  display: inline-block;
+}
+
+#word-three {
+  animation: go-down 2.6s ease-in;
+  display: inline-block;
+}
+#word-four {
+  animation: go-down 2.9s ease-in;
+  display: inline-block;
+}
+#word-five {
+  animation: go-down 3.2s ease-in;
+  display: inline-block;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#play-text {
+  animation: fade-in 3.5s ease-in;
+}
+
+.btns {
+  animation: fade-in 4s ease-in;
+}
